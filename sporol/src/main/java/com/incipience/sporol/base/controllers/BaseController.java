@@ -17,7 +17,7 @@ public class BaseController {
 
     @RequestMapping(value="/sporol/home", method={RequestMethod.GET, RequestMethod.POST})
     public String prepareHomePage(){
-        log.info("Request receive in home controller.");
+        log.info("Request received in home controller.");
         String retVal=null;
         retVal = "Home";
 
