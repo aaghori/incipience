@@ -1,4 +1,4 @@
-package com.incipience.web.ui.sporol.delegates;
+package com.incipience.sporol.delegates.logic;
 
 /**
  * Created by tripvi on 13/10/15.
