@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.incipience.sporol.base" />
+    <context:component-scan base-package="com.incipience.web.ui.controllers" />
 
     <bean
             class="org.springframework.web.servlet.view.InternalResourceViewResolver">

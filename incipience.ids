@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - inciepience@localhost" uuid="dee12a0c-e831-42f5-ab3f-0b881af17e4c">
+    <database-info product="MySQL" version="5.6.23" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="inciepience"/>
+    <table name="inciepience_extensions" schema="" catalog="inciepience" type="TABLE">
+      <column name="id" sqlType="MEDIUMINT" precision="7" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="CHAR" precision="100" scale="0" nullable="false" jdbcType="1"/>
+      <column name="full_name" sqlType="CHAR" precision="255" scale="0" nullable="true" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>
