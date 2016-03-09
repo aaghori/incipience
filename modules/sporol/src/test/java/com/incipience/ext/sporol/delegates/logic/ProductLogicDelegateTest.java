@@ -1,4 +1,4 @@
-package com.incipience.sporol.delegates.logic;
+package com.incipience.ext.sporol.delegates.logic;
 
 import static org.junit.Assert.*;
 

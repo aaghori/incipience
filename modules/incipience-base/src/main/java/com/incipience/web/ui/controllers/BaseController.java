@@ -1,5 +1,7 @@
 package com.incipience.web.ui.controllers;
 
+import com.incipience.anotations.Delegate;
+import com.incipience.utils.BaseUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 
 @Controller
+@Delegate(delegateName="productLogicDelegate", entryMethod="getProductDataForAllProducts",extensionName="sporol")
 public class BaseController {
 
     private static final Logger log = LoggerFactory.getLogger(BaseController.class);
@@ -22,6 +25,8 @@ public class BaseController {
         String retVal=null;
         retVal = "Home";
         log.debug("Extension Name = " + extensionName);
+        System.out.println("Extension Name = " + extensionName);
+        BaseUtility.collectDelegateInformation();;
         return retVal;
     }
 }
