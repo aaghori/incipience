@@ -11,6 +11,9 @@
     <title>Home Page</title>
 </head>
 <body>
-<h4>This is the home page.</h4>
+<h4>
+Welcome ! This is the home page.
+This page is under construction, prepare further if you want it to do something more.
+</h4>
 </body>
 </html>
