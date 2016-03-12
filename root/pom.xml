@@ -16,12 +16,29 @@
         <junit.version>4.11</junit.version>
         <logback.version>1.0.13</logback.version>
         <jcl-over-slf4j.version>1.7.5</jcl-over-slf4j.version>
+        <project.build.sourceEncding>UTF-8</project.build.sourceEncding>
+        <maven.build.timestamp.format>yyMM-ddHHmm</maven.build.timestamp.format>
+        <build.number>${maven.build.timestamp}</build.number>
     </properties>
 
     <modules>
         <module>../modules/incipience-base</module>
         <module>../modules/sporol</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <archiveClasses>true</archiveClasses>
+                    <attachClasses>true</attachClasses>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>
